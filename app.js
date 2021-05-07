@@ -3,4 +3,10 @@ function view(counter) {
     return `Counter: ${counter}`
     
 }
-console.log(view(5))
+const update = (msg,counter) => {
+    if (msg === '+')
+        return counter +1
+    else if (msg === '-')
+        return counter -1
+}   
+console.log(update('-',5))
